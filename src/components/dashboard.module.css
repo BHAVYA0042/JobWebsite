@@ -1,0 +1,140 @@
+*{
+  margin:0;
+  font-family: 'DM Sans', sans-serif;
+  /* font-family: 'Roboto',sans-serif; */
+  letter-spacing:0.1ch;
+}
+.dashboard{
+  padding: 5%;
+}
+
+.box{
+  border: 1px solid #ebf0f5;
+  margin-bottom: 30px ;
+  position: relative;
+  padding: 2%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  min-height: 170px;
+
+}
+.box h3{
+  color: #1e272e;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.box legend{
+  color: #445ee2;
+  background-color: #f6f8ff;
+  position: absolute;
+  right:5%;
+  top:-5%;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.intro{
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+}
+.intro img{
+  border: 1px solid;
+  margin-right: 20px;
+  width: 100px;
+  height: 100px;
+}
+.address{
+
+  display: flex;
+  color:#9eaab7;
+}
+.vertical{
+  color: #9eaab7;
+  padding: 0px 5px;
+}
+
+
+.bar{
+  position:relative;
+  left: 120px;
+  max-width: 90%;
+  flex-shrink: 4;
+  margin-top: 2%;
+}
+.marker {
+  text-align: center;
+  position: relative;
+  left: 5px;
+  top: 10px;
+}
+/* @keyframes blink {
+  0% {
+      width: 20px;
+  }
+  50% {
+      width: 25px;
+  }
+  100% {
+      width: 20px;
+  }
+}
+.line img {
+  animation: blink 1.5s;
+  animation-iteration-count: infinite;
+} */
+.status{
+  display: flex;
+  margin-top:auto;
+  align-items: baseline;
+
+  color: #1e272e;
+}
+.greenDot {
+  height: 10px;
+  width: 10px;
+  background-color: #009c5e;
+  border-radius: 50%;
+  margin-right: 5px;
+
+}
+.orangeDot {
+  height: 10px;
+  width: 10px;
+  background-color: #f2a73d;
+  border-radius: 50%;
+  margin-right: 5px;
+
+}
+.vertical{
+  display: flex;
+  flex-direction: column;
+
+}
+@media screen and (max-width:769px) {
+  .bar{
+    position:relative;
+    left: 120px;
+    max-width: 85%;
+    flex-shrink: 1;
+    margin-top: 2%;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .intro img{
+    border: 1px solid;
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+  }
+  .bar{
+    position:relative;
+    left: 0;
+    max-width: 90%;
+    flex-shrink: 1;
+    margin-top: 2%;
+  }
+}
