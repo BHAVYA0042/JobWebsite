@@ -8,7 +8,7 @@ import Menu from '@mui/material/Menu';
 import {MenuOutlined,Adb} from '@mui/icons-material';
 import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
+
 import {deepPurple}  from '@mui/material/colors';
 import MenuItem from '@mui/material/MenuItem';
 import {NavLink,Link} from "react-router-dom"
@@ -16,26 +16,22 @@ import "./navbar.css";
 
 
 const pages = ['Internships', 'Jobs', 'FAQs'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
+
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
+
 
   return (
     <AppBar position="static">

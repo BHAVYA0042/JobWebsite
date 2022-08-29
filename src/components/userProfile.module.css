@@ -44,3 +44,8 @@
 .tabs a p{
   display: block;
 }
+ @media screen and (max-width:468px){
+  .tabs a p{
+    visibility: hidden;
+  }
+ }

@@ -7,7 +7,7 @@ const Profile = () => {
   const navigate=useNavigate();
   useEffect(()=>{
     navigate("dashboard")
-  },[])
+  },[navigate])
   return (
     <div className={classes.profile}>
       <div className={classes.left}>
