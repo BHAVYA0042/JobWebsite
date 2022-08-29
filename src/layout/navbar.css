@@ -16,6 +16,16 @@
   background-color: white;
   text-align: center;
 }
+.activeMobile{
+  color:black;
+  text-decoration: none;
+  display: block;
+}
+.inactiveMobile{
+  color:black;
+  text-decoration: none;
+  display: block;
+}
 .inactive{
   color:white;
   text-decoration: none;
