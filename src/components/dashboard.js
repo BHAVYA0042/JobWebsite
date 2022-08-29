@@ -9,6 +9,8 @@ const Dashboard = () => {
       {data.map(job=>{
         return(
           <JobBox
+            key={job.id}
+            id={job.id}
             name={job.name}
             location={job.location}
             profile={job.profile}

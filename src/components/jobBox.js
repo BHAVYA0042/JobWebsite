@@ -27,26 +27,20 @@ const JobBox = (props) => {
               <p>{props.location}</p>
             </section>
 
-            {/* <section className={classes.status}>
-              {pending?
-                <div className={classes.orangeDot}></div>:
-                <div className={classes.greenDot}></div>
-              }
-              <b>{props.status}</b>
-            </section>   */}
-
           </section>
         </section>
       </div>
       <section className={classes.status}>
-              {pending?
-                <div className={classes.orangeDot}></div>:
-                <div className={classes.greenDot}></div>
-              }
-              <b>{props.status}</b>
-            </section> 
+        {pending?
+          <div className={classes.orangeDot}></div>:
+          <div className={classes.greenDot}></div>
+        }
+        <b>{props.status}</b>
+      </section> 
       <div className={classes.bar}>
-        <StepProgressBar percent={props.percent}/>
+        <StepProgressBar 
+        key={props.id}
+        percent={props.percent}/>
       </div>
       
     </fieldset>

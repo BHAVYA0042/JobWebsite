@@ -1,13 +1,14 @@
-import React ,{useEffect}from 'react';
+import React from 'react';
 import classes from "./userProfile.module.css";
-import { NavLink,Outlet,Link,useNavigate} from 'react-router-dom';
+import { NavLink,Outlet,Link} from 'react-router-dom';
 import {PersonOutlined,BusinessCenterOutlined,MessageOutlined,LogoutOutlined} from '@mui/icons-material';
 
 const Profile = () => {
-  const navigate=useNavigate();
-  useEffect(()=>{
-    navigate("dashboard")
-  },[navigate])
+  // CAUSING PROBLEMS IN BUILD
+  // const navigate=useNavigate();
+  // useEffect(()=>{
+  //   navigate("dashboard")
+  // },[])
   return (
     <div className={classes.profile}>
       <div className={classes.left}>
