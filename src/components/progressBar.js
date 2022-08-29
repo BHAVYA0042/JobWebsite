@@ -9,7 +9,6 @@ function StepProgressBar(props)  {
         <ProgressBar
         percent={props.percent}
         fillBackground="linear-gradient(to right, #fefb72, #f0bb31)"
-        text="Application Tracker"
         width="60%"
         height="13px"
       >
@@ -22,7 +21,7 @@ function StepProgressBar(props)  {
               src="https://www.clipartmax.com/png/full/232-2326578_green-dot-clip-art-at-clker-green-dot-clipart.png"
               alt=""
             />
-            <h3>Applied</h3>  
+            <h3 className={classes.labels}>Applied</h3>  
             </div>
             
             
@@ -37,7 +36,7 @@ function StepProgressBar(props)  {
               src="https://www.clipartmax.com/png/full/232-2326578_green-dot-clip-art-at-clker-green-dot-clipart.png"
               alt=""
             />
-            <h3>Accepted</h3>  
+            <h3 className={classes.labels}>Accepted</h3>  
             </div>
           )}
         </Step>
@@ -50,7 +49,7 @@ function StepProgressBar(props)  {
               src="https://www.clipartmax.com/png/full/232-2326578_green-dot-clip-art-at-clker-green-dot-clipart.png"
               alt=""
             />
-            <h3>Interview</h3>  
+            <h3 className={classes.labels}>Interview</h3>  
             </div>
           )}
         </Step>
@@ -63,7 +62,7 @@ function StepProgressBar(props)  {
               src="https://www.clipartmax.com/png/full/232-2326578_green-dot-clip-art-at-clker-green-dot-clipart.png"
               alt=""
             />
-            <h3>Result</h3>  
+            <h3 className={classes.labels}>Result</h3>  
             </div>
           )}
         </Step>
